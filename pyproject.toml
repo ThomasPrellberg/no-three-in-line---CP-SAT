@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "no-three-in-line-cpsat"
+version = "0.1.0"
+description = "CP-SAT (OR-Tools) models for the no-three-in-line problem on n×n grids"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Thomas Prellberg" }
+]
+keywords = [
+  "no-three-in-line",
+  "constraint-programming",
+  "cp-sat",
+  "or-tools",
+  "combinatorics",
+  "discrete-geometry"
+]
+dependencies = [
+  "ortools==9.15.6755"
+]
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[project.urls]
+Repository = "https://github.com/ThomasPrellberg/no-three-in-line---CP-SAT"
+Issues = "https://github.com/ThomasPrellberg/no-three-in-line---CP-SAT/issues"
+
+# If you later expose a callable `main()` in no_three_in_line.py,
+# you can uncomment this to get a `no-three-in-line` command on PATH:
+# [project.scripts]
+# no-three-in-line = "no_three_in_line:main"
+
+[tool.setuptools]
+py-modules = ["no_three_in_line"]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.6", "pytest>=8"]
