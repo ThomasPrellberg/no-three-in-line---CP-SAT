@@ -5,8 +5,7 @@ This repository contains a python script to find maximal solutions for the no-th
 
 It has been created from the companion paper using ChatGPT and subsequently validated.
 
-usage: no_three_in_line.py [-h] --n N [--sym] [--time_limit TIME_LIMIT] [--seed SEED] [--workers WORKERS] [--log_search] [--no_dedupe_line_orbits] [--no_dedupe_incidence]
-                           [--verify]
+usage: no_three_in_line.py [-h] --n N [--sym] [--time_limit TIME_LIMIT] [--seed SEED] [--workers WORKERS] [--log_search] [--no_dedupe_line_orbits] [--no_dedupe_incidence] [--verify]
 
 options:
   -h, --help            show this help message and exit
