@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the metadata below.
+title: "CP-SAT code for the no-three-in-line problem"
+type: software
+authors:
+  - given-names: Thomas
+    family-names: Prellberg
+    # orcid: "https://orcid.org/0000-0003-0519-6762"   # optional
+license: MIT
+repository-code: "https://github.com/ThomasPrellberg/no-three-in-line---CP-SAT"
+url: "https://github.com/ThomasPrellberg/no-three-in-line---CP-SAT"
+keywords:
+  - no-three-in-line
+  - constraint programming
+  - CP-SAT
+  - OR-Tools
+  - combinatorial geometry
+  - satisfiability
+abstract: >-
+  Python/OR-Tools CP-SAT models (direct and symmetry-reduced) for finding maximal
+  no-three-in-line configurations on an n×n grid under the 2-per-row formulation,
+  with optional verification of the no-three-in-line property.
+# Fill these in once you make a GitHub release and Zenodo mints the DOI:
+# version: 1.0.0
+# date-released: 2026-02-07
+# doi: 10.5281/zenodo.XXXXXXX
