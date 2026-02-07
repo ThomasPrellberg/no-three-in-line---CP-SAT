@@ -1,4 +1,3 @@
-````markdown
 # no-three-in-line---CP-SAT
 
 CP-SAT (OR-Tools) code for finding maximal configurations for the **no-three-in-line** problem on an \(n\times n\) grid.
@@ -78,6 +77,3 @@ MIT (see `LICENSE`).
 This codebase was generated from the companion paper using an LLM and then validated and edited for correctness.
 (See the paper for the formal model definitions and discussion.)
 
-```
-::contentReference[oaicite:0]{index=0}
-```
