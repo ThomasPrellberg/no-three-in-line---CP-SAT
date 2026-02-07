@@ -13,7 +13,9 @@ options:
   
   --n N
   
-  --sym (Use symmetry-reduced model (Eq. CPSATred). Default: direct model (Eq. CPSAT).)
+  --sym
+  
+  Use symmetry-reduced model (Eq. CPSATred). Default: direct model (Eq. CPSAT).
   
   --time_limit TIME_LIMIT
   
