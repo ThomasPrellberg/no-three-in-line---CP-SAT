@@ -9,11 +9,11 @@ usage: no_three_in_line.py [-h] --n N [--sym] [--time_limit TIME_LIMIT] [--seed 
 
 options:
 
-  -h, --help            show this help message and exit
+  -h, --help (show this help message and exit)
   
   --n N
   
-  --sym                 Use symmetry-reduced model (Eq. CPSATred). Default: direct model (Eq. CPSAT).
+  --sym (Use symmetry-reduced model (Eq. CPSATred). Default: direct model (Eq. CPSAT).)
   
   --time_limit TIME_LIMIT
   
