@@ -1,23 +1,29 @@
 # no-three-in-line---CP-SAT
-CP-SAT code for no-three-in-line
 
-This repository contains a python script to find maximal solutions for the no-three-in-line-problem on an nxn grid.
+CP-SAT (OR-Tools) code for finding maximal configurations for the **no-three-in-line** problem on an \(n\times n\) grid.
 
-It has been created from the companion paper using ChatGPT and subsequently validated.
+> **No-three-in-line:** place as many grid points as possible so that no three are collinear (lines of any slope).  
+> Under the common “2-per-row” formulation, the target size is \(2n\).
 
-usage: no_three_in_line.py [-h] --n N [--sym] [--time_limit TIME_LIMIT] [--seed SEED] [--workers WORKERS] [--log_search] [--no_dedupe_line_orbits] [--no_dedupe_incidence]
-                           [--verify]
+<!-- After Zenodo setup, add a DOI badge here.
+Example (replace with your Zenodo badge snippet):
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+-->
 
-options:
-  -h, --help            show this help message and exit
-  --n N
-  --sym                 Use symmetry-reduced model (Eq. CPSATred). Default: direct model (Eq. CPSAT).
-  --time_limit TIME_LIMIT
-  --seed SEED
-  --workers WORKERS
-  --log_search
-  --no_dedupe_line_orbits
-                        Sym model: do not reduce lines by Gamma-orbits.
-  --no_dedupe_incidence
-                        Sym model: do not dedupe constraints by incidence vectors.
-  --verify              Verify no-three-in-line by checking all (deduped) line intersection sets.
+## What’s in this repo
+
+- `no_three_in_line.py` — main script:
+  - **Direct model:** variables on all grid points with collinearity constraints.
+  - **Symmetry-reduced model (`--sym`):** reduces variables/constraints via rotational symmetry (as described in the companion paper).
+  - Optional **verification** (`--verify`) to check the no-three-in-line property by enumerating (deduped) line intersection sets.
+- `Table 1.txt` — table/data included to accompany the companion paper (verbatim export).
+
+## Requirements
+
+- Python 3.9+ recommended
+- OR-Tools (CP-SAT)
+
+Install dependency:
+
+```bash
+python -m pip install ortools
